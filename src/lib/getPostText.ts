@@ -1,5 +1,5 @@
 import * as Mastodon from 'tsl-mastodon-api';
-const mastodon = new Mastodon.API({access_token: 'PRZhmwmS5fpkXo442UE8SGHv8TL7XOiqjhpOh49heb0', api_url: 'https://mastodon.social/api/v1/'}); // access the Mastodon API using the access token.
+const mastodon = new Mastodon.API({access_token: 'JK5NjlNsBforDSyDSKV-6Wj_Cs4hpGBCDuOL5L8DFfU', api_url: 'https://mastodon.world/api/v1/'}); // access the Mastodon API using the access token.
 
 /*
 	getPostText():
@@ -25,7 +25,7 @@ export default async function getPostText()
 	var tagReg = new RegExp("<(:?[^>]+)>", "g"); // A general regex for HTML. Used to get the plaintext value of the mastodon post without tag notation.
 	var invalidLinkReg = new RegExp("\\S*(\\.com|\\.ca|\\.org|\\.net)\\S*(…|\\.\\.\\.)", "g");
 
-	var awaitTweet = await mastodon.getStatuses("109616451849334181", {'limit':limitVal}); //Use the Mastodon API to get a specified number of recent posts from the Mastodon API.
+	var awaitTweet = await mastodon.getStatuses("109708547020566259", {'limit':limitVal}); //Use the Mastodon API to get a specified number of recent posts from the Mastodon API.
 	var string = JSON.stringify(awaitTweet); // Convert the post into a JSON string.
 	var objJSON = JSON.parse(string)["json"]; // Convert the JSON string back to a JSON object. Kinda silly, but it doesn't work otherwise. 
 	var stringArr = []; // Initialize an empty array that we will store the regexed plaintexts in.
