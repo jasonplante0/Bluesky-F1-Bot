@@ -4,7 +4,7 @@ const mastodon = new Mastodon.API({access_token: 'JK5NjlNsBforDSyDSKV-6Wj_Cs4hpG
 /*
 	getPostText():
 
-	This function performs a Mastodon API GET request to get the n most recent tweets created by Walt Ruff. Using this, the function formats these strings down into the desired plaintext of a Bluesky post, stripping out all of the unnecessary HTML tag notation and handling formatting such that the text is compatible with Bluesky.
+	This function performs a Mastodon API GET request to get the n most recent tweets created by F1. Using this, the function formats these strings down into the desired plaintext of a Bluesky post, stripping out all of the unnecessary HTML tag notation and handling formatting such that the text is compatible with Bluesky.
 
 	args: None
 
